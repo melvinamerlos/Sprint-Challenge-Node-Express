@@ -26,13 +26,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+(1) I learned that Express is a web application framework that "sitson top of Node.js" and functions like react except its for your back end work, I liked this analogy because it helped me refine my understanding of it and its purpose.
+
+(2) We get really useful functionality as a result which could have a multitude of applications like routing and implementing middleware.
+
 - [ ] Describe Middleware?
+
+Middleware is almost what is sounds like, it allows us to add functionality/features to our code before data is passed through other middleware pieces or onto other parts of yourapplication.
 
 - [ ] Describe a Resource?
 
+The term 'resource' is focused on the data set that is returned by a request from an API to an 'endpoint' the two shouldn't be confused and are different.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+It's helpful to return a status code with a message from the server with a code that lets the user know whether it was successful or if there was an error and if so what kind of error.
+
 - [ ] How can we partition our application into sub-applications?
+
+By allotting the routes in our server.js file and importing them from our router files.
 
 ## Project Setup
 
