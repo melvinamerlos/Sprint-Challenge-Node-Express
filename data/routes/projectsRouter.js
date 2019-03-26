@@ -32,7 +32,7 @@ router.get("/:id", async (req, res) => {
 router.get("/:id/actions", async (req, res) => {
   try {
     const { id } = req.params;
-    const project = await Projects.get(id);
+    const project = await projectDb.get(id);
     const allProjectActions = await projectDb.getProjectActions(id);
     if (!project) {
       res.status(404).json({
